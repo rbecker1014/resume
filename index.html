@@ -6,14 +6,14 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZKHQNLG8N"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){dataLayer.push(arguments);} 
   gtag('js', new Date());
 
   gtag('config', 'G-JZKHQNLG8N');
 </script>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Rick Becker — Mobile Resume (Full Career)</title>
+<title>Rick Becker — Insurance Executive | COO / CIO | Digital & Operational Leader</title>
 <style>
   :root{--ink:#0f172a;--muted:#475569;--bg:#f8fafc;--card:#ffffff;--brand:#0a1a33;--accent:#059669;--radius:16px;--maxw:780px;--pad:20px}
   html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
@@ -34,6 +34,31 @@
   .content{padding:0 16px 14px}
   .when{color:var(--muted);font-size:14px;margin-bottom:8px}
   .role{margin-bottom:18px}
+
+  /* Career History jobs - add + / - only on job rows */
+  details.role summary{
+    list-style:none;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:600;
+    color:var(--brand);
+  }
+  details.role summary::before{
+    content:"+";
+    font-weight:bold;
+    width:1rem;
+    text-align:center;
+    color:var(--brand);
+  }
+  details.role[open] > summary::before{
+    content:"−";
+  }
+  details.role summary::-webkit-details-marker{
+    display:none;
+  }
+
   footer{color:#667085;font-size:13px;text-align:center;margin:18px 0}
 </style>
 </head>
